@@ -4,53 +4,53 @@
 
 @layer base {
   :root {
-    --background: 30 8% 8%;
-    --foreground: 35 20% 92%;
+    --background: 36 30% 97%;
+    --foreground: 25 20% 18%;
 
-    --card: 30 8% 11%;
-    --card-foreground: 35 20% 92%;
+    --card: 36 20% 94%;
+    --card-foreground: 25 20% 18%;
 
-    --popover: 30 8% 11%;
-    --popover-foreground: 35 20% 92%;
+    --popover: 36 20% 94%;
+    --popover-foreground: 25 20% 18%;
 
-    --primary: 38 72% 58%;
-    --primary-foreground: 30 8% 8%;
+    --primary: 38 72% 46%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 30 8% 15%;
-    --secondary-foreground: 35 20% 92%;
+    --secondary: 36 20% 90%;
+    --secondary-foreground: 25 20% 18%;
 
-    --muted: 30 8% 18%;
-    --muted-foreground: 35 10% 55%;
+    --muted: 36 15% 88%;
+    --muted-foreground: 25 10% 45%;
 
-    --accent: 38 72% 58%;
-    --accent-foreground: 30 8% 8%;
+    --accent: 38 72% 46%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 30 8% 20%;
-    --input: 30 8% 20%;
-    --ring: 38 72% 58%;
+    --border: 36 15% 82%;
+    --input: 36 15% 82%;
+    --ring: 38 72% 46%;
 
     --radius: 0.25rem;
 
-    --sidebar-background: 30 8% 8%;
-    --sidebar-foreground: 35 20% 92%;
-    --sidebar-primary: 38 72% 58%;
-    --sidebar-primary-foreground: 30 8% 8%;
-    --sidebar-accent: 30 8% 15%;
-    --sidebar-accent-foreground: 35 20% 92%;
-    --sidebar-border: 30 8% 20%;
-    --sidebar-ring: 38 72% 58%;
+    --sidebar-background: 36 30% 97%;
+    --sidebar-foreground: 25 20% 18%;
+    --sidebar-primary: 38 72% 46%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 36 20% 90%;
+    --sidebar-accent-foreground: 25 20% 18%;
+    --sidebar-border: 36 15% 82%;
+    --sidebar-ring: 38 72% 46%;
 
     /* Brand */
-    --brand-gold: #d4a43a;
-    --brand-gold-light: #e8c46a;
-    --brand-dark: #131009;
-    --brand-dark-mid: #1c1710;
-    --brand-surface: #1e1a11;
-    --brand-text: #ede8df;
-    --brand-muted: #8a8070;
+    --brand-gold: #b8881e;
+    --brand-gold-light: #d4a43a;
+    --brand-dark: #2c2415;
+    --brand-dark-mid: #f5f0e8;
+    --brand-surface: #eee8d8;
+    --brand-text: #2c2415;
+    --brand-muted: #7a6e5a;
   }
 }
 
@@ -66,7 +66,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: "Golos Text", sans-serif;
-    background-color: #131009;
+    background-color: #f7f2e9;
   }
 
   h1,
@@ -355,7 +355,7 @@
   width: 4px;
 }
 ::-webkit-scrollbar-track {
-  background: #131009;
+  background: #f7f2e9;
 }
 ::-webkit-scrollbar-thumb {
   background: var(--brand-gold);
