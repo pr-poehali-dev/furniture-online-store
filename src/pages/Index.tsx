@@ -13,10 +13,10 @@ const NAV_LINKS = [
 ];
 
 const SERVICES = [
-  { icon: "Armchair", title: "Мебель из ротанга", desc: "Кресла, диваны, столы, шезлонги, подвесные кресла — из искусственного ротанга и роупа" },
-  { icon: "Bean", title: "Кресла-мешки", desc: "Пошив кресел-мешков любых форм и размеров из влагостойких тканей" },
-  { icon: "Shirt", title: "Текстиль и вышивка", desc: "Подушки, футболки, форменная одежда с нанесением логотипа методом вышивки" },
-  { icon: "Ruler", title: "Индивидуальные проекты", desc: "Разработка и изготовление мебели под ваши размеры, цвет и стиль" },
+  { icon: "Sofa", title: "Лаундж-комплекты", desc: "Модульные системы и готовые комплекты для террас, бассейнов и садовых зон" },
+  { icon: "CircleDot", title: "Подвесные кресла", desc: "Коконы, «Nest», «Bubble» и диваны-качели — от 28 000 ₽" },
+  { icon: "BedDouble", title: "Шезлонги", desc: "Лёгкие и прочные, с регулировкой спинки, для бассейнов и пляжных зон" },
+  { icon: "Home", title: "Беседки и перголы", desc: "Сборные конструкции с ротанговыми панелями, поликарбонатная кровля" },
 ];
 
 function Header() {
@@ -25,8 +25,8 @@ function Header() {
     <header style={{ position: "sticky", top: 0, zIndex: 100, background: "rgba(19,16,9,0.96)", backdropFilter: "blur(12px)", borderBottom: "1px solid rgba(212,164,58,0.18)" }}>
       <div style={{ maxWidth: "1300px", margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center", padding: "18px 48px" }}>
         <div>
-          <div style={{ fontFamily: "serif", fontSize: "1.5rem", color: "#d4a43a", letterSpacing: "0.08em", lineHeight: 1 }}>Всё в Ажуре</div>
-          <div style={{ fontSize: "0.58rem", color: "rgba(237,232,223,0.35)", letterSpacing: "0.18em", textTransform: "uppercase", marginTop: 3 }}>Мануфактура мебели</div>
+          <div style={{ fontFamily: "serif", fontSize: "1.8rem", color: "#d4a43a", letterSpacing: "0.12em", lineHeight: 1 }}>MALACCA</div>
+          <div style={{ fontSize: "0.55rem", color: "rgba(237,232,223,0.35)", letterSpacing: "0.2em", textTransform: "uppercase", marginTop: 4 }}>Фабрика мебели · Краснодар</div>
         </div>
         <nav style={{ display: "flex", gap: "28px" }}>
           {NAV_LINKS.map((l) => (
@@ -60,15 +60,15 @@ function Hero() {
         <div>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(212,164,58,0.1)", border: "1px solid rgba(212,164,58,0.25)", padding: "6px 16px", marginBottom: "28px" }}>
             <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#d4a43a", display: "inline-block" }} />
-            <span style={{ fontSize: "0.65rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "#d4a43a" }}>Собственное производство</span>
+            <span style={{ fontSize: "0.65rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "#d4a43a" }}>Фабрика · Краснодар · Доставка по России</span>
           </div>
           <h1 style={{ fontFamily: "serif", fontSize: "clamp(2.8rem, 6vw, 5.5rem)", lineHeight: 0.95, fontWeight: 600, color: "#ede8df", marginBottom: "28px" }}>
-            Мебель<br />
-            <span style={{ color: "#d4a43a" }}>из ротанга</span><br />
-            и роупа
+            Стильная<br />
+            <span style={{ color: "#d4a43a" }}>мебель</span><br />
+            из ротанга
           </h1>
           <p style={{ fontSize: "1rem", color: "rgba(237,232,223,0.55)", maxWidth: "440px", lineHeight: 1.75, marginBottom: "44px" }}>
-            Производим мебель для улицы и интерьера, шьём кресла-мешки и подушки, наносим вышивку на текстиль. Индивидуальные проекты любой сложности.
+            Премиальная мебель из искусственного ротанга от фабрики Malacca: подвесные кресла, шезлонги, обеденные и лаундж-комплекты, беседки — для террас, балконов, садов и коммерческих объектов.
           </p>
           <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
             <a href="#catalog" style={{ background: "#d4a43a", color: "#131009", padding: "14px 36px", fontSize: "0.75rem", letterSpacing: "0.15em", textTransform: "uppercase", textDecoration: "none", fontWeight: 700 }}>
@@ -96,7 +96,7 @@ function Hero() {
 }
 
 function Stats() {
-  const stats = [["12+", "лет на рынке"], ["3 000+", "реализованных проектов"], ["46", "регионов доставки"], ["100%", "собственное производство"]];
+  const stats = [["15+", "лет на рынке"], ["5 000+", "довольных клиентов"], ["89", "городов доставки"], ["100%", "собственное производство"]];
   return (
     <div style={{ background: "#d4a43a", padding: "32px 48px" }}>
       <div style={{ maxWidth: "1300px", margin: "0 auto", display: "flex", justifyContent: "space-around", flexWrap: "wrap", gap: "24px" }}>
@@ -117,9 +117,23 @@ function Contact() {
       <div style={{ maxWidth: "600px", margin: "0 auto" }}>
         <p style={{ fontSize: "0.7rem", letterSpacing: "0.25em", textTransform: "uppercase", color: "#d4a43a", marginBottom: "12px" }}>Свяжитесь с нами</p>
         <h2 style={{ fontFamily: "serif", fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 600, color: "#ede8df", marginBottom: "16px" }}>Обсудим ваш проект</h2>
-        <p style={{ color: "rgba(237,232,223,0.5)", marginBottom: "48px", lineHeight: 1.7 }}>
+        <p style={{ color: "rgba(237,232,223,0.5)", marginBottom: "32px", lineHeight: 1.7 }}>
           Оставьте заявку — перезвоним в течение рабочего дня, подберём решение под ваш бюджет и сроки.
         </p>
+        <div style={{ display: "flex", gap: "32px", justifyContent: "center", flexWrap: "wrap", marginBottom: "40px" }}>
+          <a href="tel:+78612345678" style={{ display: "flex", alignItems: "center", gap: 8, color: "#d4a43a", textDecoration: "none", fontSize: "0.85rem" }}>
+            <Icon name="Phone" size={16} />
+            +7 (861) 234-56-78
+          </a>
+          <a href="mailto:info@malacca.ru" style={{ display: "flex", alignItems: "center", gap: 8, color: "#d4a43a", textDecoration: "none", fontSize: "0.85rem" }}>
+            <Icon name="Mail" size={16} />
+            info@malacca.ru
+          </a>
+          <span style={{ display: "flex", alignItems: "center", gap: 8, color: "rgba(237,232,223,0.5)", fontSize: "0.85rem" }}>
+            <Icon name="MapPin" size={16} />
+            Краснодар, ул. Производственная, 12
+          </span>
+        </div>
         <form style={{ display: "flex", flexDirection: "column", gap: "14px" }} onSubmit={(e) => e.preventDefault()}>
           <input placeholder="Ваше имя" style={{ background: "#131009", border: "1px solid rgba(212,164,58,0.2)", color: "#ede8df", padding: "14px 18px", fontSize: "0.85rem", outline: "none", width: "100%", boxSizing: "border-box" }} />
           <input placeholder="Телефон или email" style={{ background: "#131009", border: "1px solid rgba(212,164,58,0.2)", color: "#ede8df", padding: "14px 18px", fontSize: "0.85rem", outline: "none", width: "100%", boxSizing: "border-box" }} />
@@ -137,8 +151,8 @@ function Footer() {
   return (
     <footer style={{ borderTop: "1px solid rgba(212,164,58,0.15)", padding: "36px 48px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "20px", background: "#0f0d08" }}>
       <div>
-        <div style={{ fontFamily: "serif", fontSize: "1.2rem", color: "#d4a43a", letterSpacing: "0.08em" }}>Всё в Ажуре</div>
-        <div style={{ fontSize: "0.6rem", color: "rgba(237,232,223,0.3)", letterSpacing: "0.15em", textTransform: "uppercase", marginTop: 3 }}>Мануфактура мебели</div>
+        <div style={{ fontFamily: "serif", fontSize: "1.5rem", color: "#d4a43a", letterSpacing: "0.12em" }}>MALACCA</div>
+        <div style={{ fontSize: "0.55rem", color: "rgba(237,232,223,0.3)", letterSpacing: "0.18em", textTransform: "uppercase", marginTop: 4 }}>Фабрика мебели · Краснодар</div>
       </div>
       <div style={{ display: "flex", gap: "28px", flexWrap: "wrap" }}>
         {NAV_LINKS.map((l) => (
@@ -147,7 +161,7 @@ function Footer() {
           </a>
         ))}
       </div>
-      <div style={{ fontSize: "0.72rem", color: "rgba(237,232,223,0.25)" }}>© 2024 Все права защищены</div>
+      <div style={{ fontSize: "0.72rem", color: "rgba(237,232,223,0.25)" }}>© 2024 MALACCA. Все права защищены.</div>
     </footer>
   );
 }

@@ -5,14 +5,13 @@ import Icon from "@/components/ui/icon";
 
 const categoryIcons: Record<string, string> = {
   all: "LayoutGrid",
-  chairs: "Armchair",
-  sofas: "Sofa",
-  tables: "Table",
+  lounge: "Sofa",
+  dining: "UtensilsCrossed",
   hanging: "CircleDot",
   loungers: "BedDouble",
-  decor: "Flower2",
-  bags: "Bean",
-  textile: "Shirt",
+  balcony: "Wind",
+  gazebo: "Home",
+  chairs: "Armchair",
 };
 
 export default function Catalog() {

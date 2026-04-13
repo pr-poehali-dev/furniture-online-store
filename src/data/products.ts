@@ -6,39 +6,59 @@ export interface Product {
   material: string;
   image: string;
   badge?: string;
+  sizes?: string;
 }
 
 export const categories = [
   { id: "all", label: "Все товары" },
-  { id: "chairs", label: "Кресла" },
-  { id: "sofas", label: "Диваны" },
-  { id: "tables", label: "Столы" },
+  { id: "lounge", label: "Лаундж-комплекты" },
+  { id: "dining", label: "Обеденные группы" },
   { id: "hanging", label: "Подвесные кресла" },
   { id: "loungers", label: "Шезлонги" },
-  { id: "decor", label: "Декор" },
-  { id: "bags", label: "Кресла-мешки" },
-  { id: "textile", label: "Текстиль и вышивка" },
+  { id: "balcony", label: "Балконные группы" },
+  { id: "gazebo", label: "Беседки" },
+  { id: "chairs", label: "Кресла и диваны" },
 ];
 
 export const products: Product[] = [
-  { id: 1, name: "Кресло «Лагуна»", price: 28500, category: "chairs", material: "Искусственный ротанг", image: "", badge: "Хит" },
-  { id: 2, name: "Кресло «Бриз»", price: 19900, category: "chairs", material: "Роуп", image: "" },
-  { id: 3, name: "Кресло «Палермо»", price: 34000, category: "chairs", material: "Искусственный ротанг", image: "" },
-  { id: 4, name: "Диван «Прованс» 2-местный", price: 62000, category: "sofas", material: "Искусственный ротанг", image: "", badge: "Новинка" },
-  { id: 5, name: "Диван «Авиньон» 3-местный", price: 89000, category: "sofas", material: "Роуп", image: "" },
-  { id: 6, name: "Угловой диван «Капри»", price: 115000, category: "sofas", material: "Искусственный ротанг + роуп", image: "" },
-  { id: 7, name: "Стол обеденный «Рафаэль»", price: 38000, category: "tables", material: "Алюминий + стекло", image: "" },
-  { id: 8, name: "Стол кофейный «Тулуза»", price: 14500, category: "tables", material: "Искусственный ротанг", image: "" },
-  { id: 9, name: "Стол барный «Ницца»", price: 29000, category: "tables", material: "Алюминий + роуп", image: "", badge: "Новинка" },
-  { id: 10, name: "Подвесное кресло «Кокон»", price: 24500, category: "hanging", material: "Искусственный ротанг", image: "", badge: "Хит" },
-  { id: 11, name: "Подвесное кресло «Нест»", price: 31000, category: "hanging", material: "Роуп", image: "" },
-  { id: 12, name: "Подвесной диван «Свинг»", price: 58000, category: "hanging", material: "Искусственный ротанг", image: "" },
-  { id: 13, name: "Шезлонг «Канны»", price: 21000, category: "loungers", material: "Роуп", image: "" },
-  { id: 14, name: "Шезлонг «Монако»", price: 26500, category: "loungers", material: "Искусственный ротанг", image: "", badge: "Хит" },
-  { id: 15, name: "Кашпо плетёное «Флора»", price: 4200, category: "decor", material: "Искусственный ротанг", image: "" },
-  { id: 16, name: "Ваза декоративная «Марсель»", price: 3800, category: "decor", material: "Роуп", image: "" },
-  { id: 17, name: "Кресло-мешок «Груша» XL", price: 8900, category: "bags", material: "Вельвет / оксфорд", image: "" },
-  { id: 18, name: "Кресло-мешок «Кубик»", price: 7500, category: "bags", material: "Вельвет", image: "" },
-  { id: 19, name: "Подушка декоративная с вышивкой", price: 2200, category: "textile", material: "Хлопок + вышивка", image: "" },
-  { id: 20, name: "Футболка с вышивкой логотипа", price: 1800, category: "textile", material: "Хлопок 180г", image: "" },
+  // Лаундж-комплекты
+  { id: 1, name: "Лаундж-комплект «Riviera» 4-местный", price: 148000, category: "lounge", material: "Искусственный ротанг, алюминиевый каркас", image: "", badge: "Хит", sizes: "Диван 220×90, 2 кресла, стол 110×60" },
+  { id: 2, name: "Лаундж-комплект «Palma» 6-местный", price: 198000, category: "lounge", material: "Искусственный ротанг, алюминиевый каркас", image: "", sizes: "Угловой диван + 2 кресла + стол" },
+  { id: 3, name: "Лаундж-комплект «Monaco» модульный", price: 245000, category: "lounge", material: "Искусственный ротанг PE, каркас сталь", image: "", badge: "Новинка" },
+  { id: 4, name: "Лаундж-комплект «Capri» 3-местный", price: 98000, category: "lounge", material: "Искусственный ротанг, алюминий", image: "" },
+
+  // Обеденные группы
+  { id: 5, name: "Обеденная группа «Toscana» на 6 персон", price: 112000, category: "dining", material: "Ротанг + закалённое стекло", image: "", badge: "Хит" },
+  { id: 6, name: "Обеденная группа «Porto» на 4 персоны", price: 74000, category: "dining", material: "Ротанг + алюминий", image: "" },
+  { id: 7, name: "Обеденная группа «Amalfi» на 8 персон", price: 168000, category: "dining", material: "Искусственный ротанг PE, каркас алюминий", image: "" },
+  { id: 8, name: "Барная группа «Santorini»", price: 89000, category: "dining", material: "Ротанг + закалённое стекло", image: "", badge: "Новинка" },
+
+  // Подвесные кресла
+  { id: 9, name: "Подвесное кресло «Кокон»", price: 32000, category: "hanging", material: "Искусственный ротанг, стальная рама", image: "", badge: "Хит" },
+  { id: 10, name: "Подвесное кресло «Nest»", price: 28500, category: "hanging", material: "Искусственный ротанг", image: "" },
+  { id: 11, name: "Подвесное кресло «Bubble»", price: 41000, category: "hanging", material: "Искусственный ротанг, алюминий", image: "" },
+  { id: 12, name: "Подвесной диван-качели «Swing»", price: 68000, category: "hanging", material: "Искусственный ротанг PE, каркас сталь", image: "", badge: "Новинка" },
+  { id: 13, name: "Подвесное кресло с подставкой «Drop»", price: 54000, category: "hanging", material: "Искусственный ротанг, стальная стойка", image: "" },
+
+  // Шезлонги
+  { id: 14, name: "Шезлонг «Cannes»", price: 28000, category: "loungers", material: "Искусственный ротанг, алюминиевый каркас", image: "", badge: "Хит" },
+  { id: 15, name: "Шезлонг «Bali»", price: 34500, category: "loungers", material: "Искусственный ротанг PE, регулируемая спинка", image: "" },
+  { id: 16, name: "Шезлонг «Maldives» с навесом", price: 52000, category: "loungers", material: "Искусственный ротанг + тент", image: "" },
+  { id: 17, name: "Шезлонг «Nice» двойной", price: 44000, category: "loungers", material: "Искусственный ротанг, сталь", image: "" },
+
+  // Балконные группы
+  { id: 18, name: "Балконная группа «Compact» 2-местная", price: 42000, category: "balcony", material: "Искусственный ротанг, алюминий", image: "" },
+  { id: 19, name: "Балконная группа «Bistro»", price: 29000, category: "balcony", material: "Ротанг + стекло, складные стулья", image: "", badge: "Хит" },
+  { id: 20, name: "Балконная группа «Mini Lounge»", price: 56000, category: "balcony", material: "Искусственный ротанг, мягкие подушки", image: "" },
+
+  // Беседки
+  { id: 21, name: "Беседка «Villa» с мягкой кровлей", price: 320000, category: "gazebo", material: "Алюминий + ротанг, поликарбонат", image: "", badge: "Хит" },
+  { id: 22, name: "Беседка «Pavilion» 3×4 м", price: 248000, category: "gazebo", material: "Алюминий, поликарбонат, ротанговые панели", image: "" },
+  { id: 23, name: "Беседка «Cabana» с боковыми панелями", price: 198000, category: "gazebo", material: "Алюминий + ротанговые вставки", image: "" },
+
+  // Кресла и диваны
+  { id: 24, name: "Кресло «Adelaide»", price: 24000, category: "chairs", material: "Искусственный ротанг, алюминий", image: "" },
+  { id: 25, name: "Диван 2-местный «Barcelona»", price: 58000, category: "chairs", material: "Искусственный ротанг PE, каркас алюминий", image: "", badge: "Новинка" },
+  { id: 26, name: "Кресло-качалка «Relax»", price: 31000, category: "chairs", material: "Искусственный ротанг, деревянные полозья", image: "" },
+  { id: 27, name: "Диван 3-местный «Verona»", price: 84000, category: "chairs", material: "Искусственный ротанг, алюминиевый каркас", image: "" },
 ];
